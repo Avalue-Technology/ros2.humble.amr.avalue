@@ -1,0 +1,1 @@
+motion_control.h needs to include "avalue_robot_msg/msg/position.hpp", but we can't find position.hpp in the source code repository.

@@ -1,0 +1,8 @@
+# Ignore Filename Extension: *.jet
+*.jet
+
+# Ignore Filename Extension: *.ori 
+*.ori
+
+# Ignore internal_documents fodler (including sub folder and files)
+internal_documents/
