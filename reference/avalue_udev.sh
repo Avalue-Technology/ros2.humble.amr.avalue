@@ -24,6 +24,7 @@ echo  'KERNEL=="ttyACM*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d4",ATTR
 # ID_VENDOR_ID=8086
 # ID_MODEL_ID=0b07
 echo  'SUBSYSTEM=="video4linux", KERNEL=="video4", ATTR{name}=="Intel(R) RealSense(TM) Depth Ca", ATTRS{idVendor}=="8086", ATTRS{idProduct}=="0b07", SYMLINK+="avalue_RgbCam"' >/etc/udev/rules.d/avalue_RgbCam.rules
-service udev reload
-sleep 2
-service udev restart
+# udevadm control --reload-rules
+udevadm control --reload-rules
+udevadm trigger
+udevadm settle
