@@ -6,3 +6,6 @@
 
 # Ignore internal_documents fodler (including sub folder and files)
 internal_documents/
+
+# Ignore not_included folder
+not_included/
